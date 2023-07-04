@@ -1,0 +1,27 @@
+.add-todo-button {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--blue-color);
+  border-radius: 60px;
+  background-color: var(--green-color);
+  color: var(--blue-color);
+  font-weight: 900;
+  font-size: 36px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.add-todo-button:hover{
+  transform: rotate(-180deg);
+}
+
+.add-todo-button.open-modal {
+  transform: rotate(-225deg);
+  z-index: 110;
+}

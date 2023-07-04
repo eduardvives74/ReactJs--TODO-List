@@ -1,0 +1,68 @@
+.todo-form {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem 2rem;
+}
+
+.todo-form label {
+  font-weight: 700;
+}
+
+.todo-form textarea {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 10px 25px;
+  border: 2px solid var(--blue-color);
+  background-color: var(--green-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 18px;
+  color: var(--blue-color);
+  transition: all 0.3s, border 0s;
+}
+
+.todo-form textarea ::placeholder {
+  color: var(--blue-color);
+  opacity: 1;
+}
+
+.todo-form textarea:focus,
+.todo-form textarea:active {
+  outline: 0;
+  border: 4px solid var(--blue-color);
+  box-shadow: 0 0 20px rgba(22, 238, 177, 0.5);
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-container button {
+  width: 120px;
+  height: 42px;
+  border-radius: 0;
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+  font-weight: 700;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-container button.cancel {
+  background-color: rgb(255, 163, 163);
+}
+
+.btn-container button.save {
+  background-color: var(--green-color);
+}
